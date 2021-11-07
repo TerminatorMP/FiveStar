@@ -1,7 +1,27 @@
+@import './src/assets/styles/mixins';
+
 nav {
   position: fixed;
   width: 100%;
   height: var(--nav-height);
   background-color: var(--color-dark);
   z-index: 9999;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  span {
+    @include font-police;
+    color: var(--color-white);
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
 }

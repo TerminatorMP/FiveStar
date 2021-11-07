@@ -15,14 +15,13 @@ const FiveStars = () => {
 export default function Hero() {
   return(
       <div className={styles["hero"]}>
-
         <div className={styles["heading"]}>
           <h1>Five<span>Stars</span></h1>
           <FiveStars />
           <div className={styles["subtext"]}>
             The most wanted Roleplay Server
           </div>
-          <Button customStyle={{marginTop:"6rem"}}>
+          <Button customStyle={{marginTop:"3rem"}}>
             Join us
           </Button>
         </div>
