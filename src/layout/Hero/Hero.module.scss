@@ -1,9 +1,56 @@
+@import './src/assets/styles/mixins';
+
 .hero {
+  position: relative;
   height: 100vh;
+
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  h1 {
+    @include font-police;
+    font-size: 11.2rem;
+    color: var(--color-white);
+
+    span {
+      color: var(--color-primary);
+    }
+  }
+
+  .fivestars {
+    margin-top: -1.5rem;
+    display: flex;
+
+    div {
+      margin-right: 2rem;
+    }
+  }
+
+  .subtext {
+    margin-top: 4rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-white);
+  }
 
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 75%;
+    background-color: var(--color-dark);
   }
 }
