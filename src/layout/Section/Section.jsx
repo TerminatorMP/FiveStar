@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Section.module.scss";
 
-export default function Section({ children, type }) {
+export default function Section({ children, type, customStyle }) {
 
   const typeEnum = {
     dark: styles["dark"],
@@ -10,7 +10,7 @@ export default function Section({ children, type }) {
   }
 
   return(
-      <section className={typeEnum[type]}>
+      <section style={customStyle} className={typeEnum[type]}>
         {children}
       </section>
   )

@@ -7,6 +7,7 @@ import Content from "../../layout/Content/Content";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import Section from "../../layout/Section/Section";
 import Button from "../../components/Button/Button";
+import strandImg from "../../assets/images/strand.png";
 
 
 const data = homepageTextData.unique;
@@ -14,22 +15,26 @@ const data = homepageTextData.unique;
 export default function Unique() {
 
   return(
-      <Section type={'primary'}>
-        <Content>
-          <div className={styles["unique"]}>
-            <div className={styles["unique_left"]}>
+      <Section customStyle={{"padding": "0"}} type="primary">
+        <div className={styles["unique"]}>
+          <div className={styles["unique_left"]}>
+            <div className={`${styles["heading_wrapper"]} marginBottomMedium`}>
               <SectionHeading text={data.heading} />
-              <ul>
-                {data.text.map((txt, index) => {
-                  return <li className={"marginTopMedium"} key={index}>{txt}</li>
-                })}
-              </ul>
-              <Button type={'dark'} customStyle={'marginTopLarge'}>
-                Join us
-              </Button>
             </div>
+            <ul>
+              {data.text.map((txt, index) => {
+                return <li className={"marginBottomMedium"} key={index}>{txt}</li>
+              })}
+            </ul>
+            <Button type={'dark'} customStyle="marginTopSmall">
+              Join us
+            </Button>
           </div>
-        </Content>
+
+          <div className={styles["unique_right"]}>
+            <div style={{backgroundImage: `url("${strandImg}")`}} className={styles["strand"]} />
+          </div>
+        </div>
       </Section>
   )
 }

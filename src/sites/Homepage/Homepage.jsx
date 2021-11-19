@@ -3,6 +3,7 @@ import Navigation from "../../layout/Navigation/Navigation";
 import Hero from "../../layout/Hero/Hero";
 import Welcome from "./Welcome";
 import Unique from "./Unique";
+import Benefits from "./Benefits";
 
 
 export default function Homepage() {
@@ -12,6 +13,7 @@ export default function Homepage() {
         <Hero />
         <Welcome />
         <Unique />
+        <Benefits />
       </>
   );
 }
