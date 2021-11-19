@@ -21,11 +21,10 @@ export default function Hero() {
           <div className={styles["subtext"]}>
             The most wanted Roleplay Server
           </div>
-          <Button customStyle={{marginTop:"3rem"}}>
+          <Button type={'primary'} customStyle={"marginTopMedium"}>
             Join us
           </Button>
         </div>
-
         <div className={styles["overlay"]} />
         <img src={heroImg} alt={"Polizei Auto"}/>
       </div>

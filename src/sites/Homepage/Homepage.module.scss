@@ -1,0 +1,15 @@
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  min-width: 15rem;
+}
+
+.unique {
+  color: var(--color-dark);
+
+  li {
+    font-size: 2.4rem;
+  }
+}

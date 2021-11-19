@@ -1,9 +1,16 @@
+@import "assets/styles/margins";
+
 :root {
   --color-dark: #101216;
   --color-white: #E1E2E2;
   --color-primary: rgb(255, 100, 0);
+  --color-primary--darker: rgb(201, 54, 0);
 
   --nav-height: 7rem;
+
+  --marginSmall: 2rem;
+  --marginMedium: 4rem;
+  --marginLarge: 6rem;
 }
 
 html {
@@ -11,6 +18,10 @@ html {
   color: var(--color-white);
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark);
 }
 
 *,

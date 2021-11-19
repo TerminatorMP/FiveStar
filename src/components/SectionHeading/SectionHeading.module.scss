@@ -1,0 +1,7 @@
+@import "/src/assets/styles/mixins.scss";
+
+h2 {
+  @include font-police;
+  font-size: 5.2rem;
+  margin-bottom: 6rem;
+}

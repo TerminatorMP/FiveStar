@@ -2,17 +2,16 @@ import React from "react";
 
 import styles from "./Button.module.scss";
 
-export default function Button({children, customStyle}) {
+export default function Button({children, type, customStyle}) {
+
+
+
   return(
-      <div style={customStyle} className={styles["btn-wrapper"]}>
-        <a href="#" className={
-          [styles["btn"],
-            styles["btn-sm"],
-            styles["animated-button"],
-            styles["victoria-one"]].join(' ')}
+      <div className={`${styles["btn-wrapper"]} ${customStyle}`}>
+        <button className={`${styles["offset"]} ${styles[type]}`}
         >
           {children}
-        </a>
+        </button>
       </div>
   )
 }
