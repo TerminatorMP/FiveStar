@@ -3,26 +3,18 @@
 :root {
   --color-dark: #101216;
   --color-white: #E1E2E2;
+  --color-grey: #c0c0c0;
   --color-primary: rgb(255, 100, 0);
   --color-primary--darker: rgb(201, 54, 0);
 
   --nav-height: 7rem;
   --spacer-screen: 5rem;
 
+  --text-size: 1.6rem;
+
   --marginSmall: 2rem;
   --marginMedium: 4rem;
   --marginLarge: 6rem;
-}
-
-html {
-  font-family: Helvetica, sans-serif;
-  color: var(--color-white);
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--color-dark);
 }
 
 *,
@@ -30,4 +22,16 @@ body {
 ::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  color: var(--color-white);
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-dark);
 }

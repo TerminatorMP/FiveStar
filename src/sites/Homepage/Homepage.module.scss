@@ -20,6 +20,7 @@
 .unique {
   display: flex;
   position: relative;
+  flex-direction: row-reverse;
   color: var(--color-dark);
   background-color: var(--color-primary);
   height: 60rem;
@@ -34,12 +35,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 40%;
-  padding: 0 var(--spacer-screen);
+  flex-basis: 50%;
+  padding-left: 10rem;
+  padding-right: 5rem;
 }
 
 .unique_right {
-  flex-basis: 60%;
+  flex-basis: 50%;
   overflow: hidden;
 }
 
@@ -59,5 +61,46 @@
     height: 100%;
     opacity: 20%;
     background-color: var(--color-primary);
+  }
+}
+
+.benefits {
+  width: 100%;
+
+  & .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &_card {
+    width: 28%;
+    --color-card: #ff0000;
+    --color-card-alpha: #ff000020;
+    display: inline-block;
+    font-size: 2.4rem;
+    border: solid 2px var(--color-card);
+    background-color: var(--color-card-alpha);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 3rem;
+
+    & .heading {
+      display: flex;
+      align-items: center;
+
+      & svg {
+        color: var(--color-card);
+      }
+
+      & h3 {
+        margin-left: 1.5rem;
+      }
+    }
+
+    & p {
+      color: var(--color-grey);
+      font-size: var(--text-size);
+    }
   }
 }
