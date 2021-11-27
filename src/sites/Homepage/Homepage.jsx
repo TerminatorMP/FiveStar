@@ -4,6 +4,7 @@ import Hero from "../../layout/Hero/Hero";
 import Welcome from "./Welcome";
 import Unique from "./Unique";
 import Benefits from "./Benefits";
+import Path from "./Path";
 
 
 export default function Homepage() {
@@ -14,6 +15,7 @@ export default function Homepage() {
         <Welcome />
         <Unique />
         <Benefits />
+        <Path />
       </>
   );
 }

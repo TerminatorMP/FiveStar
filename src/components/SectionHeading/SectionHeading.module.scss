@@ -4,4 +4,9 @@ h2 {
   display: inline-block;
   @include font-police;
   font-size: 5.2rem;
+  text-transform: uppercase;
+}
+
+.dark {
+  color: var(--color-dark);
 }

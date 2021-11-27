@@ -7,6 +7,7 @@ export default function Section({ children, type, customStyle }) {
   const typeEnum = {
     dark: styles["dark"],
     primary: styles["primary"],
+    white: styles["white"],
   }
 
   return(

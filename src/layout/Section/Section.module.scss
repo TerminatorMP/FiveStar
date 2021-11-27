@@ -1,5 +1,7 @@
 section {
+  position: relative;
   padding: 20rem 0;
+  overflow: hidden;
 
   &:after {
     content: "";
@@ -17,3 +19,8 @@ section {
 .primary {
   background-color: var(--color-primary);
 }
+
+.white {
+  background-color: var(--color-white);
+}
+
