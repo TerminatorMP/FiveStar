@@ -79,7 +79,7 @@
     --color-card-alpha: #ff000020;
     display: inline-block;
     font-size: 2.4rem;
-    border: solid 2px var(--color-card);
+    border: solid 1px var(--color-card);
     background-color: var(--color-card-alpha);
     margin-left: 3rem;
     margin-right: 3rem;
@@ -121,8 +121,10 @@
   right: 2%;
   height: 100%;
 
+
   & img {
     width: 100%;
+    height: 100%;
   }
 }
 
