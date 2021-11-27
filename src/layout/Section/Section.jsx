@@ -8,6 +8,7 @@ export default function Section({ children, type, customStyle }) {
     dark: styles["dark"],
     primary: styles["primary"],
     white: styles["white"],
+    spot: styles["spot"],
   }
 
   return(
