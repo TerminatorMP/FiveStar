@@ -1,26 +1,52 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+
+import { v4 as uuidv4 } from 'uuid';
 
 import styles from './Homepage.module.scss';
 import Section from "../../layout/Section/Section";
 import Content from "../../layout/Content/Content";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import skidmark from "../../assets/images/skidmark.png";
-import Text from "../../components/Text/Text";
+
+import {pathData} from "./homepageTextData";
+
+
+export default function Path() {
+  const [path, setPath] = useState('');
+  const [text, setText] = useState('');
+  const [image, setImage] = useState();
+
+  useEffect(() => {
+    handleSelect(pathData[0])
+  }, [])
+
+  const handleSelect = (data) => {
+    setPath(data.path);
+    setText(data.text);
+    setImage(data.image);
+  }
 
 const Selection = () => {
   return(
       <div className={styles["selection"]}>
         <ul>
-          <li>Civil</li>
-          <li>Polizei</li>
-          <li>Medic</li>
-          <li>Medic</li>
+          {pathData.map((data, index) => {
+            return <li
+                key={index}
+                className={data.path === path ? styles["aktive"]: ''}
+                onClick={() => handleSelect(data)}>
+              {data.path}
+            </li>
+          })}
         </ul>
+        <p>
+          {text}
+        </p>
       </div>
   )
 }
 
-export default function Path() {
+
   return(
       <Section type='white'>
         <span className={styles["noise"]} />
@@ -28,7 +54,6 @@ export default function Path() {
         <Content>
           <SectionHeading text='Wähle deinen Weg' color={'dark'}/>
           <div className={`${styles["path"]} marginTopLarge`}>
-
             <Selection />
 
             <div className={styles["emblem"]}>

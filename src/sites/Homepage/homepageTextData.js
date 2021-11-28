@@ -50,3 +50,31 @@ export const benefitsData = [
       color: '#22F000'
     }
   ];
+
+export const pathData = [
+  {
+    path: "Civil",
+    text: "civil",
+    image: "image",
+  },
+  {
+    path: "Police",
+    text: "police",
+    image: "image",
+  },
+  {
+    path: "Medic",
+    text: "medic",
+    image: "image",
+  },
+  {
+    path: "Gang",
+    text: "gang",
+    image: "image",
+  },
+  {
+    path: "Sonstiges",
+    text: "Werde kreativ und erfinde deine eigene Rolle oder Job",
+    image: "image",
+  },
+]
