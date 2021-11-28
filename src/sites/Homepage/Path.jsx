@@ -29,7 +29,7 @@ export default function Path() {
 const Selection = () => {
   return(
       <div className={styles["selection"]}>
-        <ul>
+        <ul className="marginBottomSmall">
           {pathData.map((data, index) => {
             return <li
                 key={index}

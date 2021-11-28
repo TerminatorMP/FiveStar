@@ -85,6 +85,10 @@
     margin-right: 3rem;
     padding: 3rem;
 
+    &:hover {
+      box-shadow: 0 0 11px var(--color-card);
+    }
+
     & .heading {
       display: flex;
       align-items: center;
@@ -131,10 +135,10 @@
   display: flex;
   width: 100%;
   color: var(--color-dark);
-  border: solid 3px var(--color-dark);
   min-height: 30rem;
 
   & .selection {
+    border: solid 3px var(--color-dark);
     flex-basis: 70%;
 
     & ul {
