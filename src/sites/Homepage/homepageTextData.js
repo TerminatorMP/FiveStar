@@ -1,4 +1,9 @@
-import {faTachometerAlt, faShieldAlt, faUser, faThumbsUp, faPaintRoller} from "@fortawesome/free-solid-svg-icons";
+import {faTachometerAlt, faShieldAlt, faUser, faThumbsUp, faPaintRoller, faQuestion} from "@fortawesome/free-solid-svg-icons";
+
+import civilImg from "../../assets/images/civil.png";
+import lspdImg from "../../assets/images/lspd.png";
+import medicImg from "../../assets/images/medic.png";
+import gangImg from "../../assets/images/gang.png";
 
 export const homepageTextData = {
   welcome: {
@@ -55,26 +60,26 @@ export const pathData = [
   {
     path: "Civil",
     text: "civil",
-    image: "image",
+    image: civilImg,
   },
   {
     path: "Police",
     text: "police",
-    image: "image",
+    image: lspdImg,
   },
   {
     path: "Medic",
     text: "medic",
-    image: "image",
+    image: medicImg,
   },
   {
     path: "Gang",
     text: "gang",
-    image: "image",
+    image: gangImg,
   },
   {
-    path: "Sonstiges",
+    path: "Deiner",
     text: "Werde kreativ und erfinde deine eigene Rolle oder Job",
-    image: "image",
+    image: faQuestion,
   },
 ]

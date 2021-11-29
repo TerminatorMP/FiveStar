@@ -9,6 +9,7 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import skidmark from "../../assets/images/skidmark.png";
 
 import {pathData} from "./homepageTextData";
+import strandImg from "../../assets/images/strand.png";
 
 
 export default function Path() {
@@ -57,7 +58,7 @@ const Selection = () => {
             <Selection />
 
             <div className={styles["emblem"]}>
-
+              <div style={{backgroundImage: `url("${image}")`}} className={styles["emblem_img"]} />
             </div>
           </div>
         </Content>
