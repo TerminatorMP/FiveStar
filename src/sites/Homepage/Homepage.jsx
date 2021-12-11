@@ -7,6 +7,7 @@ import Benefits from "./Benefits";
 import Path from "./Path";
 import Button from "../../components/Button/Button";
 import Begin from "./Begin";
+import Footer from "../../layout/Footer/Footer";
 
 
 export default function Homepage() {
@@ -19,6 +20,7 @@ export default function Homepage() {
         <Benefits />
         <Path />
         <Begin />
+        <Footer />
       </>
   );
 }

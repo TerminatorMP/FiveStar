@@ -3,11 +3,11 @@
 :root {
   --color-dark: #101216;
   --color-white: #E1E2E2;
-  --color-grey: #c0c0c0;
-  --color-primary: rgb(255, 100, 0);
+  --color-grey: #a6a6a6;
+  --color-primary: rgb(255, 75, 0);
   --color-primary--darker: rgb(201, 54, 0);
 
-  --nav-height: 7rem;
+  --nav-height: 6.5rem;
   --spacer-screen: 5rem;
 
   --text-size: 1.6rem;
@@ -26,12 +26,19 @@
 }
 
 html {
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--color-white);
   font-size: 62.5%;
   line-height: 1.5;
+  scroll-snap-type: y proximity;
 }
 
 body {
   background-color: var(--color-dark);
+}
+
+.active {
+  color: var(--color-white);
+  padding-bottom: 0px !important;
+  border-bottom: solid .3rem var(--color-primary);
 }
