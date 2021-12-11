@@ -200,3 +200,35 @@
     }
   }
 }
+
+.begin {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  &_divider {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--color-dark);
+  }
+
+  &_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    &_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+      background-color: var(--color-dark);
+    }
+  }
+}

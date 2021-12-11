@@ -5,6 +5,8 @@ import Welcome from "./Welcome";
 import Unique from "./Unique";
 import Benefits from "./Benefits";
 import Path from "./Path";
+import Button from "../../components/Button/Button";
+import Begin from "./Begin";
 
 
 export default function Homepage() {
@@ -16,6 +18,7 @@ export default function Homepage() {
         <Unique />
         <Benefits />
         <Path />
+        <Begin />
       </>
   );
 }
