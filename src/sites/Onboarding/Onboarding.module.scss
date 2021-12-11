@@ -1,4 +1,44 @@
 .anleitung {
+  color: var(--color-dark);
   background-color: var(--color-white);
   min-height: calc(100vh - var(--nav-height));
+  padding-top: calc(5rem + var(--nav-height));
+
+  &_wrapper {
+    display: flex;
+  }
+
+  &_info {
+    position: sticky;
+    min-width: 35rem;
+    margin-right: 5rem;
+    padding: 1rem 0;
+    border-top: solid 2px var(--color-dark);
+    border-bottom: solid 2px var(--color-dark);
+
+
+    & .heading {
+      color: var(--color-primary);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    & .link {
+      color: var(--color-dark);
+      margin-bottom: 1rem;
+    }
+  }
+
+  &_content {
+
+  }
+
+  &_subheading {
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+  }
+
+  & p {
+    color: var(--color-grey-text);
+  }
 }
