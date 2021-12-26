@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 
-import { v4 as uuidv4 } from 'uuid';
 
 import styles from './Homepage.module.scss';
 import Section from "../../layout/Section/Section";
@@ -9,7 +8,6 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import skidmark from "../../assets/images/skidmark.png";
 
 import {pathData} from "./homepageTextData";
-import strandImg from "../../assets/images/strand.png";
 
 
 export default function Path() {
@@ -29,8 +27,8 @@ export default function Path() {
 
 const Selection = () => {
   return(
-      <div className={styles["selection"]}>
-        <ul className="marginBottomSmall">
+    <div className={styles["selection"]}>
+        <ul className="marginBottomMedium">
           {pathData.map((data, index) => {
             return <li
                 key={index}
@@ -40,28 +38,26 @@ const Selection = () => {
             </li>
           })}
         </ul>
-        <p>
-          {text}
-        </p>
+      <div className="flex-split">
+        <p>{text}</p>
+        <div className={styles["emblem"]}>
+          <img src={image} className={styles["emblem_img"]} />
+        </div>
       </div>
+    </div>
   )
 }
 
 
   return(
-      <Section type='white'>
-        <span className={styles["noise"]} />
-        <div className={styles["skidmark"]}><img src={skidmark} alt='Reifenspur' /></div>
+      <Section type='blackLight'>
         <Content>
-          <SectionHeading text='Wähle deinen Weg' color={'dark'}/>
+          <SectionHeading text='Wähle deinen Weg' />
           <div className={`${styles["path"]} marginTopLarge`}>
             <Selection />
-
-            <div className={styles["emblem"]}>
-              <div style={{backgroundImage: `url("${image}")`}} className={styles["emblem_img"]} />
-            </div>
           </div>
         </Content>
+        <img className={styles["skidmark"]} src={skidmark} alt='Reifenspur' />
       </Section>
   )
 }

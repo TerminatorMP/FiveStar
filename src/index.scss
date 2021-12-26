@@ -1,7 +1,9 @@
 @import "assets/styles/margins";
+@import "assets/styles/utils";
 
 :root {
   --color-dark: #101216;
+  --color-dark-light: #12151a;
   --color-white: #E1E2E2;
   --color-grey: #a6a6a6;
   --color-grey-text: #4f4f4f;
@@ -30,7 +32,7 @@ html {
   font-family: Roboto, sans-serif;
   color: var(--color-white);
   font-size: 62.5%;
-  line-height: 1.5;
+  line-height: 1.8;
   scroll-snap-type: y proximity;
 }
 

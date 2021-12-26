@@ -30,7 +30,7 @@ const Card = ({ heading, text, icon, color, coloralpha }) => {
 
 export default function Benefits() {
   return(
-      <Section type="dark">
+      <Section type="black">
         <Content>
           <div className={styles["benefits"]}>
             <SectionHeading text="Das bieten wir" />

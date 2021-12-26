@@ -3,7 +3,6 @@ import React from "react";
 import { homepageTextData } from "./homepageTextData";
 
 import styles from './Homepage.module.scss';
-import Content from "../../layout/Content/Content";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import Section from "../../layout/Section/Section";
 import Button from "../../components/Button/Button";
@@ -18,12 +17,12 @@ export default function Unique() {
       <Section customStyle={{"padding": "0"}} type="primary">
         <div className={styles["unique"]}>
           <div className={styles["unique_left"]}>
-            <div className={`${styles["heading_wrapper"]} marginBottomMedium`}>
+            <div className={`${styles["heading_wrapper"]}`}>
               <SectionHeading text={data.heading} />
             </div>
             <ul>
               {data.text.map((txt, index) => {
-                return <li className={"marginBottomMedium"} key={index}>{txt}</li>
+                return <li className={"marginBottomSmall"} key={index}>{txt}</li>
               })}
             </ul>
             <Button type={'dark'} customStyle="marginTopSmall">

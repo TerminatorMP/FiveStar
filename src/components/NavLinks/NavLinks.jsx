@@ -10,7 +10,8 @@ export default function NavLinks() {
       <div className={styles["navlinks"]}>
         <ul>
           <li><NavLink to="/" activeClassName="link_active">Home</NavLink></li>
-          <li><NavLink to="/anleitung" activeClassName="link_active">Anleitung</NavLink></li>
+          <li><NavLink to="/anleitung" activeClassName="link_active">Zugang</NavLink></li>
+          <li><NavLink to="/wiki" activeClassName="link_active">Wiki</NavLink></li>
         </ul>
       </div>
   )
