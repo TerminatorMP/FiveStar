@@ -1,5 +1,11 @@
 @import './src/assets/styles/mixins';
 
+.nav_spacer {
+  height: var(--nav-height);
+  width: 100%;
+  background-color: transparent;
+}
+
 nav {
   position: fixed;
   width: 100%;

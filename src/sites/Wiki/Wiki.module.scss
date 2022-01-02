@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wiki_entry {
+  padding-top: 5rem;
+  padding-left:5rem;
+}
+
+.wiki {
+  min-height: calc(100vh - var(--nav-height));
+  flex-grow: 1;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}

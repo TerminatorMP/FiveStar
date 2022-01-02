@@ -8,16 +8,19 @@ import Content from "../Content/Content";
 
 export default function Navigation() {
   return(
-      <nav>
-        <Content>
-          <div className={styles["nav"]}>
-            <div className={styles["logo-wrapper"]}>
-              <Logo />
-              <span>FiveStars</span>
+      <>
+        <nav>
+          <Content>
+            <div className={styles["nav"]}>
+              <div className={styles["logo-wrapper"]}>
+                <Logo />
+                <span>FiveStars</span>
+              </div>
+              <NavLinks />
             </div>
-            <NavLinks />
-          </div>
-        </Content>
-      </nav>
+          </Content>
+        </nav>
+        <div className={styles["nav_spacer"]}/>
+      </>
   )
 }

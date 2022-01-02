@@ -32,16 +32,18 @@ html {
   font-family: Roboto, sans-serif;
   color: var(--color-white);
   font-size: 62.5%;
-  line-height: 1.8;
+  line-height: 1.2;
   scroll-snap-type: y proximity;
 }
 
-body {
-  background-color: var(--color-dark);
+p {
+  line-height: 1.2;
 }
 
-.active {
-  color: var(--color-white) !important;
-  padding-bottom: 0px !important;
-  border-bottom: solid .3rem var(--color-primary);
+body {
+  background-color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
 }

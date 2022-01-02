@@ -1,0 +1,49 @@
+.wiki_sidebar {
+  position: fixed;
+  height: calc(100vh - var(--nav-height));
+  width: 20rem;
+  background-color: var(--color-white);
+  padding-top: 5rem;
+  border-right: solid .2rem var(--color-grey);
+}
+
+.placeholder {
+  width: 20rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.sidebar_box {
+  display: flex;
+  flex-direction: column;
+  border-left: solid .2rem rgba(0,0,0,.1);
+}
+
+.sidebar_item {
+  line-height: 1;
+  margin-left: -.2rem;
+  position: relative;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
+  color: var(--color-grey-text);
+  border-left: solid .2rem transparent;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: var(--color-dark);
+    border-color: var(--color-grey-text);
+  }
+
+
+
+  &_active {
+    color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+  }
+}

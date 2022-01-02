@@ -4,14 +4,27 @@ import { NavLink } from 'react-router-dom';
 import styles from './NavLinks.module.scss';
 
 
+const activeClass = `${styles["link"]} ${styles["link_active"]}`;
+const defaultClass = `${styles["link"]}`;
+
 export default function NavLinks() {
+
+  const NavItem = ({children, to}) => {
+    return(
+        <li>
+          <NavLink to={to} className={({isActive}) => isActive ? activeClass : defaultClass}>
+            {children}
+          </NavLink>
+        </li>
+    )
+  }
 
   return(
       <div className={styles["navlinks"]}>
         <ul>
-          <li><NavLink to="/" activeClassName="link_active">Home</NavLink></li>
-          <li><NavLink to="/anleitung" activeClassName="link_active">Zugang</NavLink></li>
-          <li><NavLink to="/wiki" activeClassName="link_active">Wiki</NavLink></li>
+          <NavItem to="/">Home</NavItem>
+          <NavItem to="/anleitung">Zugang</NavItem>
+          <NavItem to="/wiki">Wiki</NavItem>
         </ul>
       </div>
   )
