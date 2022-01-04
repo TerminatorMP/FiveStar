@@ -11,6 +11,7 @@ import Wiki from "./sites/Wiki/Wiki";
 import WikiRacing from "./sites/Wiki/WikiRacing";
 import WikiInfo from "./sites/Wiki/WikiInfo";
 import WikiTasten from "./sites/Wiki/WikiTasten";
+import WikiRegeln from "./sites/Wiki/WikiRegeln";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/anleitung" element={<Onboarding />} />
         <Route path="/wiki" element={<Wiki />}>
           <Route path="" element={<WikiInfo />} />
+          <Route path="regeln" element={<WikiRegeln />} />
           <Route path="racing" element={<WikiRacing />} />
           <Route path="hotkeys" element={<WikiTasten />} />
         </Route>
