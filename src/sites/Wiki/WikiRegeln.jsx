@@ -175,86 +175,155 @@ const ruleData = [
   },
   {
     number: 12,
-    topic: "Account / Erste Schritte",
+    topic: "Wert des Lebens",
     subrules: [
-      ""
+      "Das Leben selbst ist das oberste Gut. Es gilt für jeden Spieler, sein Leben in jeglicher Hinsicht zu schützen und nicht für materielle Gegenstände oder ausweglose Situationen aufs Spiel zu setzen!\""
     ]
   },
   {
     number: 13,
-    topic: "Account / Erste Schritte",
+    topic: "New-Life Regel",
     subrules: [
-      ""
+      "Stirbt ein Spieler während einer RP Situation oder in einem Gefecht, verliert er diesbezüglich jegliche Erinnerungen (letzten 30 Minuten) und darf nicht mehr an dieser RP Situation teilnehmen.",
+        "Nach dem Tod ist es verboten an den Ort des Todes für 30 Minuten zurückzukehren (nicht näher als 300m) es sei denn die Situation ist beendet. Bekommt man irgendwie Informationen über die Situation darf trotzdem nicht erneut teilgenommen werden solange diese läuft.",
+        "Es ist verboten einer Person zu erzählen an was sie verstorben ist.",
+        "Nach dem Tod bekommt ein Spieler eine 10 Min. Sperre, jegliche Waffen zu ziehen oder Kampfhandlungen zu beginnen.",
+        "Im Falle einer Wiederbelebung darf weiterhin an der RP-Situation teilgenommen werden, allerdings sollte ein Medic jemanden behandeln bekommt dieser ebenfalls eine Sperre wie in §8.4. Der Spieler verliert keine Erinnerungen.",
+        "Sollte ein Spieler eine offensichtliche Hinrichtung/Bloodout oder Exekutiert werden, so ist er verboten über \"G\" einen Medic zu rufen, oder beteiligte Personen einen Dispatch zu senden. Dies muss dem Spieler mitgeteilt werden vor der Hinrichtung",
     ]
   },
   {
     number: 14,
-    topic: "Account / Erste Schritte",
+    topic: "Schussankündigung",
     subrules: [
-      ""
+      "Respekt vor der Waffe\n" +
+      "Ich höre meinem Widersacher zu und versuche mir alles, im seriösen Rollenspiel Mögliche, nicht verletzt oder gar getötet zu werden.",
+        "Respekt vor dem Leben\n" +
+        "Ich höre meinem Opfer zu und versuche mir alles, im seriösen Rollenspiel Mögliche, meine Absicht durchzubekommen.",
+        "Warnschuss\n" +
+        "Ein Warnschuss ist mit den Worten „Halt stehen bleiben oder ich schieße!“ oder „Dies ist ein Überfall!“ gleich zu setzen.\n" +
+        "Der gegenüberliegenden Partei muss, der Situation entsprechend, eine Reaktionszeit gewährt werden.",
+        "Taser  / Schlagstock\n" +
+        "Das Benutzen dieser Waffen als Beamter gilt der Selbstverteidigung oder Festsetzung eines Anwohners. Dies ist nicht als Schussankündigung zu sehen, sondern als unmittelbarer Zwang.\n" +
+        "Benutzt ein Anwohner dies gegen ein Mitglied der Leitstelle, ist dies eine Angriff und zählt als Schussankündigung.",
+        "Waffenbenutzung im Fahrzeug\n" +
+        "Muss ein Beamter ein Fahrzeug aus gegebenen Situation heraus, gezwungenermaßen mit Waffengewalt stoppen. Gilt dies nicht als Schussankündigung, sondern als unmittelbarer Zwang.",
+        "Aufgabe / Wechsel der Situation\n" +
+        "Die Situation kann sich jederzeit ändern. Ein Täter kann sich anders entscheiden. Ein Opfer kann die überhand gewinnen. Erinnere Dich an unser gemeinsames Ziel und die Grundaussagen unseres verpflichtenden Regelwerks!\n" +
+        "Der Spaß steht im Vordergrund und man wird auch mal verlieren.",
     ]
   },
   {
     number: 15,
-    topic: "Account / Erste Schritte",
+    topic: "Zusammenschluss ziviler Spieler",
     subrules: [
-      ""
+      "Unter einer Gruppe ist ein zusammenschluss von zivilen Spielern mit den gleichen Absichten zu verstehen",
+        "Ein Zusammenschluss ziviler Spieler (Gruppe) darf bei einer aktiv aggressiven Handlung gegenüber anderen zivilen Gruppen und Sämtlichen Fraktionen nicht aus mehr als 5 Spieler bestehen und nicht mit einer Fraktion agieren. Bei einer passiven Handlung gilt diese Regelung nicht.",
+        "Das absichtliche sammeln mit mehr als 5 Spielern, mit dem wissen das Gefahr besteht um der 5 Mann Regel zu umgehen ist zu unterlassen.",
     ]
   },
   {
     number: 16,
-    topic: "Account / Erste Schritte",
+    topic: "Fraktionen und Neutralität",
     subrules: [
-      ""
+      "Als neutrale Fraktionen gelten der Rettungsdienst, Mechaniker und die Feuerwehr.",
+        "Wenn ein Mitarbeiter gewaltsam dazu aufgefordert wird, einem Spielgeschehen nicht mehr beizuwohnen, muss dieser dem Folge leisten!",
+        "Fraktionschefs und deren Stellvertreter dürfen auf Grund von Befangenheit kein Support führen, wenn ihre Fraktion betroffen ist.",
+        "Sind Fraktionsleiter für mehr als 14 Tage nicht verfügbar so ist für Ersatz zu sorgen. Andernfalls bestimmt das Team einen Nachfolger. Ist kein Nachfolger vorhanden so wird die Fraktion geschlossen.",
+        "Fraktionen müssen sich im Discord bewerben. Ein Auftreten ohne unsere Zustimmung ist nicht gestattet. Um eine illegale Fraktion zu gründen benötigst du mind. 3 feste Mitglieder.\n" +
+        "Sollte die Mitgliederzahl über einen Zeitraum von 7 Tagen unter 3 Mitglieder sein wird die Fraktion geschlossen.",
+        "Spieler die einen Fraktionswechsel machen, sprich Kriminell zu Staatlich, Staatlich zu Kriminell oder auch Kriminell zu Kriminell haben eine 7 Tage Wechselsperre.",
+        "Bloodout: Spieler die aus einer Fraktion ausgeschlossen werden via Bloodout vergessen jegliche Handlungen die sie mit der Fraktion erlebt haben.\n" +
+        "Sprich: Namen, Autos, Infos, Aufenthaltsorte, Routen etc",
+        "Staatliche Fraktionen wie Polizei oder EMS dürfen keinen kriminellen Handlungen nachgehen.",
     ]
   },
   {
     number: 17,
-    topic: "Account / Erste Schritte",
+    topic: "Fraktionseigentum",
     subrules: [
-      ""
+      "Fraktionswaffen müssen im Fraktionslager gelagert werden und dürfen nicht in Privatfahrzeuge oder Häuser/Hotels gelagert werden.\n" +
+      "Dies zählt unter Power RP da man den Staatsfraktionen so jede Möglichkeit nimmt diese zu finden (z.B. bei einer Razzia).\n" +
+      "Wichtig ist das der große Teil einer Waffensammlung von Fraktionen in dessen Lagerräume und oder Kofferräume der Frakfahrzeuge gelagert wird.\n" +
+      "Niemand sagt was wenn die eine oder andere Waffe wo anders gelagert wird."
     ]
   },
   {
     number: 18,
-    topic: "Account / Erste Schritte",
+    topic: "Überfälle",
     subrules: [
-      ""
+      "Ein Raub/Überfall ist eine Bedrohung von Personen, ohne externe Forderung.",
+        "Während eines Überfalls muss sichergestellt werden, dass das Gesagte von der gegnerischen Partei gehört und verstanden werden kann. Hierzu muss in der Verhandlung mit 30m gesprochen werden.",
     ]
   },
   {
     number: 19,
-    topic: "Account / Erste Schritte",
+    topic: "Geiselnahme und Entführung",
     subrules: [
-      ""
+      "Eine Geiselnahme/Entführung ist eine Bedrohung von Personen, mit externen Forderungen. (z.B. Lösegeld)",
+        "Das Lösegeld sollte einem realistischen Wert entsprechen. Ihr dürft natürlich auch Fahrzeuge oder Equipment fordern.",
+        "Es darf nur eine Geiselnahme einer Fraktion gleichzeitig erfolgen. ( Dies limitiert nicht die Anzahl der Geiseln, sondern die unterschiedlichen Geiselnahmen an sich ).",
+        "Das Entführen/Rauben von Polizisten ist erst ab drei verfügbaren Polizisten erlaubt.",
+        "Das Entführen/Rauben von Polizisten ist nur mit einem RP Hintergrund gestattet. Heißt nicht ---> Da ist ja ein Cop, lass den mal hochnehmen!",
+        "Das Looten und klauen von Polizeifahrzeugen ist nur mit RP Hintergrund gestattet.",
+        "Lösegelder: Maximale Lösegelder dürfen nicht den Betrag von 100.000€ überschreiten.\n" +
+        "Gegenüber des Staates darf eine Maximal Summe von 150.000€ verlangt werden. Gegenüber von Gangs und Gruppierungen dürfen 200.000€ verlangt werden.",
+        "Nach einer beendeten RP-Situation mit Geiselnahme, müssen die Geiseln entfesselt werden. Den passenden Schlüssel zu den Handschellen besitzt nur die eigene Fraktion.",
     ]
   },
   {
     number: 20,
-    topic: "Account / Erste Schritte",
+    topic: "Bank sowie Laden/Auto/-Juwelenraub",
     subrules: [
-      ""
+      "Während und nach dem Bank-/Laden/Auto/Juwelenraub dürfen die beteiligten Personen von anderen Personen überfallen werden.",
+        "Bei einem Bank-/Laden/Auto/Juwelenraub müssen die ausraubenden Personen gefragt werden, ob das Interesse an Verhandlungen und somit einem friedlichen Ausgang der Situation besteht.",
+        "Nach einem erfolgreichen Bank-/Laden/Auto/Juwelenraub muss 30 Minuten gewartet werden, bis ein anderer Raub gestartet werden kann.",
+        "Sollten Spieler einen Disconnect während eines Bank-/Laden/Yacht/Juwelenraub bekommen, muss das RP weitergeführt werden.",
+        "Maximale Anzahl von Spielern während eines Raubes (ausgeschlossen Geiseln)" +
+        "Auto / Ladenraub\t2 Spieler\n" +
+        "Juwelier:\t\t3 Spieler\n" +
+        "Kleine Banken:\t4 Spieler\n" +
+        "Staatsbank:\t\t5 Spieler\n",
+        "Private angelegenheiten sprich Geiselnahmen oder Fraktionskriege können mit voller Besatzung stattfinden.",
     ]
   },
   {
     number: 21,
-    topic: "Account / Erste Schritte",
+    topic: "Kriegserklärungen",
     subrules: [
-      ""
+      "Kriegserklärung\n" +
+      "Eine Kriegserklärung muss klar und deutlich ausgesprochen werden.\n" +
+      "Nur OG's können ein solches Machtwort sprechen.",
+        "Pflicht\n" +
+        "Fraktionskleidung\n" +
+        "Fraktionsautos (privat Fahrzeuge in Fraktionsfarbe zählen ebenfalls)\n" +
+        "Dem Polizeichef muss eine Meldung gemacht werden wann der Krieg begonnen hat.",
+        "Zu Beachten\n" +
+        "Kriege werden immer ab Datum X ab 0 Uhr angefangen\n" +
+        "Es zählt 7 Tage lang ein Schuss-Call\n" +
+        "Kriegswaffen dürfen nur im Krieg verwendet werden. \n" +
+        "Sniper, und Grosskaliber - Waffen dürfen benutzt werden.",
+        "Folgende Zonen sind Kriegsfrei: Würfel Park, Bankomaten, Banken, Bennys, Krankenhaus",
+        "Die Polizei greift nur in der Stadt ein (Alles was hellgrau ist gehört zur Stadt)\n" +
+        "Außerhalb der Stadt greift die Polizei nicht ein",
+        "1x pro Sonnenwende kann ein Anschlag auf das Gegnerische Anwesen verübt werden",
+        "Wie im normalen Regelwerk festgehalten ist das Looten einer Leiche verboten auch nach Wiederbelebung\n" +
+        "Fraktionsautos können jedoch gelootet werden",
+        "bei Todesfall/Ausbluten\n" +
+        "wenn man beim Krankenhaus Spawnt zieht man die Kleider aus bis\n" +
+        "man wieder Bewaffnet und Kampffähig ist",
+        "Abbruch eines Krieges\n" +
+        "Der Abbruch eines Krieges kann anonym via Twitter angekündigt werden, per Mittelsmann oder Discord.\n" +
+        "Es wird zu einer Sitzung der OG's (Anführer) der jeweiligen Fraktionen gerufen, um einen Waffenstillstand auszuhandeln.",
     ]
   },
   {
     number: 22,
-    topic: "Account / Erste Schritte",
+    topic: "Flugfähige Fahrzeuge",
     subrules: [
-      ""
-    ]
-  },
-  {
-    number: 23,
-    topic: "Account / Erste Schritte",
-    subrules: [
-      ""
+      "Flugfähige Einsatzfahrzeuge dürfen im Einsatz überall landen, da wo es möglich ist und Sinn ergibt.",
+        "Flugfähige Fahrzeuge dürfen nicht gegen Häuser oder Objekte geflogen werden!",
+        "Absichtliches gefährliches tief fliegen ist verboten!",
     ]
   },
 ]
