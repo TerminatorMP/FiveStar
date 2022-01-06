@@ -29,7 +29,7 @@ export default function Hero() {
         <div className={styles["overlay_blur"]} />
         <div className={styles["overlay"]} />
         <div className={styles["video_container"]}>
-          <video height="100%" muted loop autoPlay>
+          <video height="100%" muted loop autoPlay playsInline>
             <source src={heroVideo} type="video/mp4" />
             Video wird nicht unterstützt
           </video>
