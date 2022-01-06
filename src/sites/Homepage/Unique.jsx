@@ -6,7 +6,7 @@ import styles from './Homepage.module.scss';
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import Section from "../../layout/Section/Section";
 import Button from "../../components/Button/Button";
-import strandImg from "../../assets/images/strand.png";
+import strandImg from "../../assets/images/strand.jpg";
 
 
 const data = homepageTextData.unique;
