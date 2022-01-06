@@ -26,6 +26,7 @@ export default function Hero() {
             Join us
           </Button>
         </div>
+        <div className={styles["overlay_blur"]} />
         <div className={styles["overlay"]} />
         <div className={styles["video_container"]}>
           <video height="100%" muted loop autoPlay>
