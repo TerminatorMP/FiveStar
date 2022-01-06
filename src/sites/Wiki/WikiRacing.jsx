@@ -32,7 +32,7 @@ export default function WikiRacing() {
             <h3>Beispiel</h3>
             <p>Hier ein Beispiel um ein Rennen zu starten:</p>
             <div className={styles["racing_beispiel_wrapper"]}>
-              <p><em>Chat oeffen</em></p>
+              <p><em>Chat öffen</em></p>
               <p>/races loadPublic 00 <em>[enter]</em></p>
               <p>/races register 500 1 300 <em>[enter]</em></p>
               <p>/races start 10 <em>[enter]</em></p>
