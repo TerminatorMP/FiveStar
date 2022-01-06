@@ -30,15 +30,31 @@ export default function WikiRacing() {
           </div>
           <div className={styles["racing_beispiel"]}>
             <h3>Beispiel</h3>
-            <p>Hier ein Beispiel um ein Rennen zu starten:</p>
             <div className={styles["racing_beispiel_wrapper"]}>
               <p><em>Chat öffen</em></p>
-              <p>/races loadPublic 00 <em>[enter]</em></p>
-              <p>/races register 500 1 300 <em>[enter]</em></p>
-              <p>/races start 10 <em>[enter]</em></p>
+              <p><em>/races loadPublic 00</em> [enter]</p>
+              <p> <em>/races register 500 1 300</em> [enter]</p>
+              <p> <em>/races start 10</em> [enter]</p>
             </div>
 
-
+            <div className={styles["racing_regeln"]}>
+              <h3>Regeln</h3>
+              <div className={styles["racing_regeln_wrapper"]}>
+                <p>
+                  Der Ersteller des Races bestimmt welche Klasse gefahren wird z.B GTA Sport Autos
+                  oder aus der Fahrzeuginfo Liste z.B B+
+                  Falls bei einem B+ Rennen ein A Klasse Wagen antreten will muss dieser gedrosselt werden
+                </p><br />
+                <p>
+                  Es gilt Rücksichtsvolles Fahren und es gelten die Normalen VDM Regeln
+                  Unfälle können passieren aber fordert es nicht heraus.
+                </p><br />
+                <p>
+                  Es ist erlaubt nach einem Crash sein Fahrzeug mit einem Reparatur-Kit zu reparieren.
+                  Es ist nicht erlaubt sich ein Kopflosen-Fahrzeug zu klauen und damit das Rennen zu beenden
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </WikiEntry>
