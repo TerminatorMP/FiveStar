@@ -4,6 +4,7 @@ import styles from './Hero.module.scss';
 import heroImg from '../../assets/images/hero_bg.jpg';
 import Star from "../../components/Star/Star";
 import Button from "../../components/Button/Button";
+import heroVideo from "../../assets/video/hero_video.mp4";
 
 
 const FiveStars = () => {
@@ -26,7 +27,12 @@ export default function Hero() {
           </Button>
         </div>
         <div className={styles["overlay"]} />
-        <img src={heroImg} alt={"Polizei Auto"}/>
+        <div className={styles["video_container"]}>
+          <video height="100%" muted loop autoPlay>
+            <source src={heroVideo} type="video/mp4" />
+            Video wird nicht unterstützt
+          </video>
+        </div>
       </div>
   )
 }
