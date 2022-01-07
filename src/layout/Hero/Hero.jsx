@@ -1,10 +1,9 @@
 import React from 'react';
 
 import styles from './Hero.module.scss';
-import heroImg from '../../assets/images/hero_bg.jpg';
 import Star from "../../components/Star/Star";
 import Button from "../../components/Button/Button";
-import heroVideo from "../../assets/video/hero_video.mp4";
+import heroVideo from "../../assets/video/hero_video_faststart.mp4";
 
 
 const FiveStars = () => {

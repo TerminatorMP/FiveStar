@@ -1,6 +1,5 @@
 import React from "react";
 
-import heroVideo from '../../assets/video/hero_video.mp4';
 import styles from './Homepage.module.scss';
 import Section from "../../layout/Section/Section";
 import Content from "../../layout/Content/Content";
