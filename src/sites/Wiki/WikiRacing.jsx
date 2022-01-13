@@ -35,6 +35,12 @@ export default function WikiRacing() {
               <p><em>/races loadPublic 00</em> [enter]</p>
               <p> <em>/races register 500 1 300</em> [enter]</p>
               <p> <em>/races start 10</em> [enter]</p>
+              <br/>
+              <p>Nach dem Rennen:</p>
+              <p> <em>/races clear</em> [enter]</p>
+              <br/>
+              <p>Wenn du nicht weiterfahren kannst:</p>
+              <p> <em>/races leave</em> [enter]</p>
             </div>
 
             <div className={styles["racing_regeln"]}>

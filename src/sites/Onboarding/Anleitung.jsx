@@ -13,11 +13,11 @@ const Info = () => {
         </p>
         <p className={styles["heading"]}>TeamSpeak</p>
         <p className={styles["link"]}>
-          136.243.216.69
+          45.142.114.56
         </p>
         <p className={styles["heading"]}>FiveM</p>
         <p className={styles["link"]}>
-          136.243.216.69
+          45.142.114.56
         </p>
     </div>
   </div>

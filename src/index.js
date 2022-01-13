@@ -12,6 +12,7 @@ import WikiRacing from "./sites/Wiki/WikiRacing";
 import WikiInfo from "./sites/Wiki/WikiInfo";
 import WikiTasten from "./sites/Wiki/WikiTasten";
 import WikiRegeln from "./sites/Wiki/WikiRegeln";
+import WikiHotkey from "./sites/Wiki/WikiHotkey";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -22,7 +23,7 @@ ReactDOM.render(
           <Route path="" element={<WikiInfo />} />
           <Route path="regeln" element={<WikiRegeln />} />
           <Route path="racing" element={<WikiRacing />} />
-          <Route path="hotkeys" element={<WikiTasten />} />
+          <Route path="hotkeys" element={<WikiHotkey />} />
         </Route>
       </Routes>
     </BrowserRouter>,
