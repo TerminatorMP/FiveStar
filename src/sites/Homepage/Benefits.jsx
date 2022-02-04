@@ -9,11 +9,10 @@ import { faTachometerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const Card = ({ heading, text, icon, color, coloralpha }) => {
+const Card = ({ heading, text, icon }) => {
   return(
       <div
-          style={{"--color-card": color, "--color-card-alpha": coloralpha}}
-          className={`${styles["benefits_card"]} marginTopLarge`}
+          className={`${styles["benefits_card"]}`}
       >
         <div className={`${styles["heading"]} marginBottomSmall`}>
           <FontAwesomeIcon icon={icon} />
@@ -40,8 +39,6 @@ export default function Benefits() {
                     heading={data.heading}
                     text={data.text}
                     icon={data.icon}
-                    color={data.color}
-                    coloralpha={data.color + "20"}
                 />
               })}
             </div>

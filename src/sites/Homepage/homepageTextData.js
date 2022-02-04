@@ -34,25 +34,25 @@ export const benefitsData = [
       heading: "Anti Cheat",
       text: "Niemand mag Hacker, deshalb bekaempfen wir sie mit voller Haerte",
       icon: faShieldAlt,
-      color: '#0057FF'
+      color: '#ff6200'
     },
     {
       heading: "Aktive Admins",
       text: "Jeden Tag sind unsere Admins fuer eure Wuensche und Probleme online und helfen euch gern",
       icon: faUser,
-      color: '#ff0000'
+      color: '#ff6200'
     },
     {
       heading: "Einsteiger freundlich",
       text: "Dank Guides und unserer hilfsbereiten Community wirst du dich schnell zurechtfinden ",
       icon: faThumbsUp,
-      color: '#8400EC'
+      color: '#ff6200'
     },
     {
       heading: "Du gestaltest mit",
       text: "Wir unterstuezen euch bei euren Ideen und erweitern den Server nach euren Vorstellungen",
       icon: faPaintRoller,
-      color: '#22F000'
+      color: '#ff6200'
     }
   ];
 

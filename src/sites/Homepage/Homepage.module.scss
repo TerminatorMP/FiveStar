@@ -80,27 +80,24 @@
 
   &_card {
     width: 28%;
-    --color-card: #ff0000;
-    --color-card-alpha: #ff000020;
+    --color-card: var(--color-grey);
+    --color-card-alpha: transparent;
     display: inline-block;
     font-size: 2.4rem;
-    border: solid 1px var(--color-card);
+    border-left: solid 1px var(--color-card);
     background-color: var(--color-card-alpha);
+    margin-top: 8rem;
     margin-left: 3rem;
     margin-right: 3rem;
     padding: 3rem;
-
-    &:hover {
-      box-shadow: 0 0 11px var(--color-card);
-    }
 
     & .heading {
       display: flex;
       align-items: center;
 
       & svg {
+        color: var(--color-primary);
         font-size: 3rem;
-        color: var(--color-card);
       }
 
       & h3 {
