@@ -1,23 +1,13 @@
 .wiki_sidebar {
-  position: fixed;
+  position: sticky;
+  top: var(--nav-height);
+  left: 0;
   height: calc(100vh - var(--nav-height));
-  width: 20rem;
+  width: 30rem;
   background-color: var(--color-dark);
   padding-top: 5rem;
   border-top: solid .2rem var(--color-primary);
   box-shadow: 0 0 10px rgba(0,0,0, .6);
-
-  &::before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: -.2rem;
-    right: 20rem;
-    height: calc(100% + .2rem);
-    width: 100rem;
-    border-top: solid .2rem var(--color-primary);
-    background-color: var(--color-dark);
-  }
 }
 
 .placeholder {
@@ -29,34 +19,33 @@
 .sidebar_box {
   display: flex;
   flex-direction: column;
-  border-left: solid .2rem rgba(255,255,255,.15);
 }
 
 .sidebar_item {
+  width: 100%;
   line-height: 1;
-  margin-left: -.2rem;
   position: relative;
-  font-size: 1.8rem;
-  padding-left: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  padding: 2rem 3rem;
   color: var(--color-grey);
-  border-left: solid .2rem transparent;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    background-color: rgba(255,255,255, .05);
     color: var(--color-white);
-    border-color: var(--color-white);
   }
-
-
 
   &_active {
     color: var(--color-primary) !important;
-    border-color: var(--color-primary) !important;
+    background-color: rgba(255,255,255, .1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255,255,255, .15);
+    }
   }
 }

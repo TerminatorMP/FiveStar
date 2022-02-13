@@ -1,5 +1,6 @@
 @import "assets/styles/margins";
 @import "assets/styles/utils";
+@import "assets/styles/mixins";
 
 :root {
   --color-dark: #101216;
@@ -33,7 +34,10 @@ html {
   color: var(--color-white);
   font-size: 62.5%;
   line-height: 1.2;
-  scroll-snap-type: y proximity;
+
+  @include media("md") {
+    font-size: 55%;
+  }
 }
 
 p {

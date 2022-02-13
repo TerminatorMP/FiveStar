@@ -7,6 +7,7 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import Section from "../../layout/Section/Section";
 import Button from "../../components/Button/Button";
 import strandImg from "../../assets/images/strand.jpg";
+import Star from "../../components/Star/Star";
 
 
 const data = homepageTextData.unique;
@@ -22,7 +23,12 @@ export default function Unique() {
             </div>
             <ul>
               {data.text.map((txt, index) => {
-                return <li className={"marginBottomSmall"} key={index}>{txt}</li>
+                return(
+                    <div style={{display: "flex", alignItems: "center"}} className={"marginBottomSmall"}>
+                      <Star color={"primary"} height={"2rem"} width={"2rem"}/>
+                      <li key={index}>{txt}</li>
+                    </div>
+                )
               })}
             </ul>
             <Button type={'dark'} customStyle="marginTopSmall">

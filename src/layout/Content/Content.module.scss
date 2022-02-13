@@ -1,5 +1,11 @@
+@import "src/assets/styles/mixins";
+
 .content-wrapper {
   width: 80%;
   max-width: 130rem;
   margin: 0 auto;
+
+  @include media("xl") {
+    width: 95%;
+  }
 }

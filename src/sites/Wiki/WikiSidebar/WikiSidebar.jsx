@@ -13,8 +13,6 @@ export default function WikiSidebar() {
             <SidebarItem to="racing" description="Racing" />
           </div>
         </div>
-
-        <div className={styles["placeholder"]} />
       </>
 
   )

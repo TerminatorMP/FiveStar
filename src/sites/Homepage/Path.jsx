@@ -38,7 +38,7 @@ const Selection = () => {
             </li>
           })}
         </ul>
-      <div className="flex-split">
+      <div className={styles["selection_content"]}>
         <p>{text}</p>
         <div className={styles["emblem"]}>
           <img src={image} className={styles["emblem_img"]} />

@@ -1,8 +1,15 @@
+@import "src/assets/styles/mixins";
+
 .welcome {
   text-align: center;
 
   width: 60%;
   margin: 0 auto;
+
+  @include media("md") {
+    width: 90%;
+    text-align: center;
+  }
 
   & h2 {
     margin-bottom: var(--marginMedium);
@@ -25,6 +32,15 @@
   background-color: var(--color-primary);
   height: 60rem;
 
+  & .heading_wrapper {
+    margin-bottom: 2rem;
+  }
+
+  @include media("md") {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+
   li {
     font-size: 2.4rem;
   }
@@ -38,6 +54,18 @@
   flex-basis: 50%;
   padding-left: 10rem;
   padding-right: 5rem;
+
+  & ul {
+    list-style: none;
+
+    & li {
+      margin-left: 1rem;
+    }
+  }
+
+  @include media("md") {
+    padding: 3rem 5rem;
+  }
 }
 
 .unique_right {
@@ -59,7 +87,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 10%;
+    opacity: .15;
     background-color: var(--color-primary);
   }
 }
@@ -76,6 +104,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+
+    @include media("md") {
+      width: 80%;
+    }
+
+    @include media("sm") {
+      width: 95%;
+    }
   }
 
   &_card {
@@ -86,10 +123,14 @@
     font-size: 2.4rem;
     border-left: solid 1px var(--color-card);
     background-color: var(--color-card-alpha);
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-left: 3rem;
     margin-right: 3rem;
-    padding: 3rem;
+    padding: 0 3rem;
+
+    @include media("md") {
+      width: 100%;
+    }
 
     & .heading {
       display: flex;
@@ -119,6 +160,10 @@
   height: 100%;
   width: auto;
   z-index: 0;
+
+  @include media("sm") {
+    display: none;
+  }
 }
 
 .path {
@@ -131,6 +176,11 @@
   z-index: 2;
 
   & .selection {
+
+    &_content {
+      display: flex;
+      padding: 2rem;
+    }
 
     & ul {
       display: flex;
@@ -186,6 +236,10 @@
     justify-content: center;
     align-items: center;
 
+    @include media("md") {
+      display: none;
+    }
+
     &_img {
       background-size: contain;
       width: 25rem;
@@ -236,5 +290,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+
+    @include media("md") {
+      width: 90%;
+    }
   }
 }

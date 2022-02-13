@@ -17,8 +17,8 @@ export const homepageTextData = {
     heading: 'Was uns Ausmacht',
     text: [
       'Roleplay an erster Stelle',
-      'Roleplay an erster Stelle',
-      'Roleplay an erster Stelle',
+      'Leidenschaft fuer Autos und Rennen',
+      'Chillige Leute',
     ]
   }
 }

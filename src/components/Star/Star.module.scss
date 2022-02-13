@@ -2,7 +2,13 @@
   height: 4.6rem;
   width: 4.6rem;
 
-  svg path {
+  &--white svg path {
     fill: var(--color-white) !important;
+  }
+  &--dark svg path {
+    fill: var(--color-dark) !important;
+  }
+  &--primary svg path {
+    fill: var(--color-primary) !important;
   }
 }
