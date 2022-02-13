@@ -18,9 +18,6 @@ export default function Hero() {
         <div className={styles["heading"]}>
           <h1>Five<span>Stars</span></h1>
           <FiveStars />
-          <div className={styles["subtext"]}>
-            The most wanted Roleplay Server
-          </div>
           <Button type={'primary'} customStyle={"marginTopMedium"}>
             Join us
           </Button>

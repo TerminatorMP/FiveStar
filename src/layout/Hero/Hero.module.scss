@@ -19,12 +19,22 @@
 
   h1 {
     @include font-police;
-    font-size: 11.2rem;
+    font-size: 13.2rem;
     color: var(--color-white);
+
+    @include media("md") {
+      display: flex;
+      flex-direction: column;
+    }
 
     span {
       color: var(--color-primary);
     }
+
+  }
+
+  & button {
+    font-size: 3rem;
   }
 
   .fivestars {
@@ -37,13 +47,6 @@
         margin-right: 0;
       }
     }
-  }
-
-  .subtext {
-    margin-top: 4rem;
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: var(--color-white);
   }
 
 
