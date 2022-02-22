@@ -28,7 +28,7 @@ export default function Path() {
 const Selection = () => {
   return(
     <div className={styles["selection"]}>
-        <ul className="marginBottomMedium">
+        <ul>
           {pathData.map((data, index) => {
             return <li
                 key={index}
@@ -41,7 +41,7 @@ const Selection = () => {
       <div className={styles["selection_content"]}>
         <p>{text}</p>
         <div className={styles["emblem"]}>
-          <img src={image} className={styles["emblem_img"]} />
+            <img src={image} className={styles["emblem_img"]} />
         </div>
       </div>
     </div>

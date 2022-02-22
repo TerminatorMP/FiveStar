@@ -12,6 +12,7 @@ nav {
   height: var(--nav-height);
   background-color: var(--color-dark);
   z-index: 9999;
+  box-shadow: 0 0 5px rgba(0,0,0, .8);
 }
 
 .nav {
@@ -35,5 +36,9 @@ nav {
     color: var(--color-white);
     font-size: 2.4rem;
     margin-left: 1rem;
+
+    @include media("md") {
+      display: none;
+    }
   }
 }

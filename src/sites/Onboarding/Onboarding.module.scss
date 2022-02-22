@@ -1,3 +1,5 @@
+@import "src/assets/styles/mixins";
+
 .anleitung {
   color: var(--color-dark);
   background-color: var(--color-white);
@@ -6,6 +8,10 @@
 
   &_wrapper {
     display: flex;
+
+    @include media("md") {
+      flex-direction: column;
+    }
   }
 
   &_info {
@@ -15,6 +21,12 @@
     padding: 1rem 0;
     border-top: solid 2px var(--color-dark);
     border-bottom: solid 2px var(--color-dark);
+
+
+    @include media("md") {
+      position: relative;
+      margin-bottom: 5rem;
+    }
 
 
     & .heading {

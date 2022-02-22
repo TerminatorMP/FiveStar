@@ -38,6 +38,9 @@ html {
   @include media("md") {
     font-size: 55%;
   }
+  @include media("sm") {
+    font-size: 52%;
+  }
 }
 
 p {

@@ -6,6 +6,10 @@ h2 {
   font-size: 5.2rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
+
+  @include media("sm") {
+    font-size: 4.2rem;
+  }
 }
 
 .dark {

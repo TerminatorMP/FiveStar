@@ -1,9 +1,10 @@
 import {faTachometerAlt, faShieldAlt, faUser, faThumbsUp, faPaintRoller, faQuestion} from "@fortawesome/free-solid-svg-icons";
 
-import civilImg from "../../assets/images/civil.png";
-import lspdImg from "../../assets/images/lspd.png";
+import civilImg from "../../assets/images/path_2.jpeg";
+import lspdImg from "../../assets/images/path_3.jpeg";
 import medicImg from "../../assets/images/medic.png";
-import gangImg from "../../assets/images/gang.png";
+import gangImg from "../../assets/images/path_4.jpeg";
+import deinerImg from "../../assets/images/path_1.jpeg";
 
 export const homepageTextData = {
   welcome: {
@@ -80,6 +81,6 @@ export const pathData = [
   {
     path: "Deiner",
     text: "Werde kreativ und erfinde deine eigene Rolle oder Job",
-    image: faQuestion,
+    image: deinerImg,
   },
 ]

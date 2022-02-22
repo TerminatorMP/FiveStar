@@ -5,6 +5,7 @@ import NavLinks from "../../components/NavLinks/NavLinks";
 
 import styles from './Navigation.module.scss';
 import Content from "../Content/Content";
+import NavLinksResponsive from "../../components/NavLinksResponsive/NavLinksResponsive";
 
 export default function Navigation() {
   return(
