@@ -13,11 +13,15 @@
 }
 
 .closer {
-  position: absolute;
-  top: 2rem;
-  left: 3rem;
-  color: var(--color-grey);
-  font-size: 3rem;
+  display: none;
+
+  @include media("md") {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    color: var(--color-grey);
+    font-size: 3rem;
+  }
 }
 
 .sidebar_spacer {
