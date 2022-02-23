@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 
 import styles from './Hero.module.scss';
 import Star from "../../components/Star/Star";
 import Button from "../../components/Button/Button";
 import heroVideo from "../../assets/video/hero_video.mp4";
-
+import {useNavigate} from 'react-router-dom';
 
 const FiveStars = () => {
   return(
@@ -12,13 +12,17 @@ const FiveStars = () => {
   )
 }
 
+
 export default function Hero() {
+    const navigate = useNavigate();
   return(
       <div className={styles["hero"]}>
         <div className={styles["heading"]}>
           <h1>Five<span>Stars</span></h1>
           <FiveStars />
-          <Button type={'primary'} customStyle={"marginTopMedium"}>
+          <Button onClick={() => {navigate('/anleitung')}}
+                  type={'primary'}
+                  customStyle={"marginTopMedium"}>
             Join us
           </Button>
         </div>

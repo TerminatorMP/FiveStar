@@ -177,6 +177,14 @@
   background-color: var(--color-dark);
   z-index: 2;
 
+  &_heading {
+    @include media("sm") {
+      & h2 {
+        text-align: center;
+      }
+    }
+  }
+
   & .selection {
 
     &_content {

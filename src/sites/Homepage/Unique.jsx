@@ -8,11 +8,13 @@ import Section from "../../layout/Section/Section";
 import Button from "../../components/Button/Button";
 import strandImg from "../../assets/images/strand.jpg";
 import Star from "../../components/Star/Star";
+import {useNavigate} from "react-router-dom";
 
 
 const data = homepageTextData.unique;
 
 export default function Unique() {
+  const navigate = useNavigate();
 
   return(
       <Section customStyle={{"padding": "0"}} type="primary">
@@ -31,7 +33,7 @@ export default function Unique() {
                 )
               })}
             </ul>
-            <Button type={'dark'} customStyle="marginTopSmall">
+            <Button onClick={() => {navigate('/anleitung')}} type={'dark'} customStyle="marginTopSmall">
               Join us
             </Button>
           </div>

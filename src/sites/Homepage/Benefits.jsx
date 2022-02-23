@@ -5,7 +5,6 @@ import Section from "../../layout/Section/Section";
 import Content from "../../layout/Content/Content";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import  { benefitsData }  from "./homepageTextData";
-import { faTachometerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 

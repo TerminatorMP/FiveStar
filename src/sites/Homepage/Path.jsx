@@ -52,9 +52,11 @@ const Selection = () => {
   return(
       <Section type='blackLight'>
         <Content>
-          <SectionHeading text='Wähle deinen Weg' />
-          <div className={`${styles["path"]} marginTopLarge`}>
-            <Selection />
+            <div className={styles["path_heading"]}>
+                <SectionHeading text='Wähle deinen Weg' />
+            </div>
+            <div className={`${styles["path"]} marginTopLarge`}>
+              <Selection />
           </div>
         </Content>
         <img className={styles["skidmark"]} src={skidmark} alt='Reifenspur' />

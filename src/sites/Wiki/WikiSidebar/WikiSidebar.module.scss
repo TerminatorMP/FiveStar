@@ -1,5 +1,35 @@
+@import "src/assets/styles/mixins";
+
+.toggler {
+  position: fixed;
+  top: calc(var(--nav-height) + 2rem);
+  left: 1rem;
+  padding: 2rem;
+  font-size: 2.6rem;
+  color: var(--color-dark);
+  border-radius: 50%;
+  background-color: rgba(0,0,0, .1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.closer {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  color: var(--color-grey);
+  font-size: 3rem;
+}
+
+.sidebar_spacer {
+  width: 30rem;
+
+  @include media("md") {
+    display: none;
+  }
+}
+
 .wiki_sidebar {
-  position: sticky;
+  position: fixed;
   top: var(--nav-height);
   left: 0;
   height: calc(100vh - var(--nav-height));
@@ -8,6 +38,18 @@
   padding-top: 5rem;
   border-top: solid .2rem var(--color-primary);
   box-shadow: 0 0 10px rgba(0,0,0, .6);
+  transition: transform .3s;
+
+  @include media("md") {
+    transform: translateX(-100%);
+    padding-top: 7rem;
+  }
+
+  &.aktive {
+    @include media("md") {
+      transform: translateX(0);
+    }
+  }
 }
 
 .placeholder {

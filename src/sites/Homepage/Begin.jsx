@@ -4,9 +4,11 @@ import styles from './Homepage.module.scss';
 import skyline from '../../assets/images/skyline.jpg';
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import Button from "../../components/Button/Button";
+import {useNavigate} from "react-router-dom";
 
 
 export default function Begin() {
+    const navigate = useNavigate();
   return(
       <>
         <div className={styles["begin_divider"]} />
@@ -15,7 +17,7 @@ export default function Begin() {
           <div className={styles["begin_img_overlay"]} />
           <div className={styles["begin_content"]}>
             <SectionHeading text='Beginne deine Geschichte' />
-            <Button customStyle="marginTopMedium">HIER</Button>
+            <Button onClick={() => navigate("/anleitung")} customStyle="marginTopMedium">HIER</Button>
           </div>
         </div>
       </>
