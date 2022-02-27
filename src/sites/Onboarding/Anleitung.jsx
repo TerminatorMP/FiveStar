@@ -31,7 +31,7 @@ const AnleitungContent = () => {
           Whitelist
         </div>
         <p>
-          Wer Zugang zu unserem fiveSTARS Discord und RP Server haben möchte muss sich AB SOFORT bei einem Teammitglied vorstellen!
+          Wer Zugang zu unserem fiveSTARS Discord und RP Server haben möchte muss sich bei einem Teammitglied vorstellen.
           Dies dient zur Sicherheit und garantiert einen angenehmen Spielspaß!
           So wollen wir in Zukunft Engpässe in einzelnen Fraktionen vermeiden und das Gleichgewicht halten!
         </p>
