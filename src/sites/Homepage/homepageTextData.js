@@ -2,7 +2,7 @@ import {faTachometerAlt, faShieldAlt, faUser, faThumbsUp, faPaintRoller, faQuest
 
 import civilImg from "../../assets/images/path_2.jpeg";
 import lspdImg from "../../assets/images/path_3.jpeg";
-import medicImg from "../../assets/images/medic.png";
+import medicImg from "../../assets/images/path_medic.jpeg";
 import gangImg from "../../assets/images/path_4.jpeg";
 import deinerImg from "../../assets/images/path_1.jpeg";
 

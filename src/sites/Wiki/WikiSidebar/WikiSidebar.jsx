@@ -14,19 +14,28 @@ export default function WikiSidebar() {
         <SidebarItem to="racing" description="Racing" />
     ]
 
+    const toggle = () => {
+        setIsAktive(!isAktive);
+    }
+
+    const close = () => {
+        setIsAktive(false);
+    }
+
     return(
         <div>
-            <div onClick={() => {setIsAktive(!isAktive)}}
+            <div onClick={toggle}
                  className={styles["toggler"]}>
                 <FontAwesomeIcon icon={faBars} />
             </div>
             <div className={styles["sidebar_spacer"]}/>
             <div className={isAktive ? `${styles["wiki_sidebar"]} ${styles["aktive"]}` : styles["wiki_sidebar"]}>
-                <div onClick={() => {setIsAktive(false)}} className={styles["closer"]}><FontAwesomeIcon icon={faBars} /></div>
-                <div onClick={() => {setIsAktive(false)}} className={styles["sidebar_box"]}>
+                <div onClick={close} className={styles["closer"]}><FontAwesomeIcon icon={faBars} /></div>
+                <div onClick={close} className={styles["sidebar_box"]}>
                     {sidebarItemList}
                 </div>
             </div>
+            {isAktive ? <div onClick={close} className={styles["overlay"]} /> : null}
         </div>
 
   )
