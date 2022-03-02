@@ -59,13 +59,13 @@ export const benefitsData = [
 
 export const pathData = [
   {
-    path: "Civil",
+    path: "Civilist",
     text: "civil",
     image: civilImg,
   },
   {
-    path: "Police",
-    text: "police",
+    path: "Polizei",
+    text: `Lege den Kriminellen das Handwerk und sorge in der Stadt fuer Recht und Ordnung. Rette Geiseln in Not. Wilde Verfolgungsjagten und das alltaegliche Chaos.`,
     image: lspdImg,
   },
   {
@@ -74,13 +74,21 @@ export const pathData = [
     image: medicImg,
   },
   {
-    path: "Gang",
-    text: "gang",
+    path: "Gangster",
+    text: `Es gibt natürlich auch aktive Gangs die immer Nachwuchs suchen und für eine Bewerbung immer ein offenes Ohr haben. 
+    Hier kannst du dann deine kriminelle Seite ausleben.
+    Ob du einen Zivilisten als Geisel nimmst und Geld vom Staat erpresst oder gleich einen kleinen Laden an der Ecke ausraubst und anschließend dir eine Verfolgungsjagt mit der Polizei lieferst. 
+    Mit einem guten Plan gelingen dann auch größere Sachen wie Juwelenraub oder du holst dir ein Stück vom Kuchen bei einen riesigen Staatsbankraub.
+    Am Ende kann der absolute Reichtum warten...`,
     image: gangImg,
   },
   {
     path: "Deiner",
-    text: "Werde kreativ und erfinde deine eigene Rolle oder Job",
+    text: `Dies ist recht selten in der deutschen GTA 5 RP Community aber wir können es anbieten!
+    Du kannst bei uns auf dem Server tatsächlich deinen ganz eigenen Shop betreiben. 
+    Dein eigener Laden mit voll funktionierenden Job-Menü und Aktivitäten (farmen, craften, verkaufen).
+    Du bestimmst sogar welches Produkt du anbieten möchtest, wie es hergestellt werden soll und wie dein Abverkauf läuft. 
+    Lass dir ein gutes Konzept einfallen und werde damit Erfolgreich.`,
     image: deinerImg,
   },
 ]
