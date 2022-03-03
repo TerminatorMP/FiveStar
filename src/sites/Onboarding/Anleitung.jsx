@@ -8,17 +8,19 @@ const Info = () => {
     <div>
       <div className={styles["anleitung_info"]}>
         <p className={styles["heading"]}>Discord</p>
-        <p className={styles["link"]}>
-          https://discord.gg/HrxAvpVh
-        </p>
+          <div className={styles["link"]}>
+              <a href={"https://discord.gg/c2DgzzpKXR"} target={"_blank"} >
+                  https://discord.gg/c2DgzzpKXR
+              </a>
+          </div>
         <p className={styles["heading"]}>TeamSpeak</p>
-        <p className={styles["link"]}>
+        <div className={styles["link"]}>
           45.142.114.56
-        </p>
+        </div>
         <p className={styles["heading"]}>FiveM</p>
-        <p className={styles["link"]}>
+        <div className={styles["link"]}>
           45.142.114.56
-        </p>
+        </div>
     </div>
   </div>
   )

@@ -30,13 +30,19 @@
 
 
     & .heading {
-      color: var(--color-primary);
+      color: var(--color-dark);
       font-size: 2rem;
       font-weight: bold;
     }
     & .link {
-      color: var(--color-dark);
-      margin-bottom: 1rem;
+      line-height: 1;
+      font-size: 2rem;
+      padding: .5rem 0;
+      color: rgba(0, 0, 255, 1);
+
+      & a:visited {
+        color: inherit;
+      }
     }
   }
 
