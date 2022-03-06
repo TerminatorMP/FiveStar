@@ -59,8 +59,8 @@ export const benefitsData = [
 
 export const pathData = [
   {
-    path: "Civilist",
-    text: "civil",
+    path: "Zivilist",
+    text: `Mache worauf du Lust hast, keine Verpflichtungen und absolute Freiheit. Knüpfe Kontakte, erkunde und probiere aus. Finde deinen Weg`,
     image: civilImg,
   },
   {
@@ -70,7 +70,7 @@ export const pathData = [
   },
   {
     path: "Medic",
-    text: "medic",
+    text: "Du hilfst gernen Leuten? Dann sei die letzte Rettung in der Not oder der erste Ansprechpartner rund um Gesundheit.",
     image: medicImg,
   },
   {
