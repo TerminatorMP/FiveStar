@@ -25,6 +25,7 @@ export default function NavLinks() {
           <NavItem to="/">Home</NavItem>
           <NavItem to="/anleitung">Zugang</NavItem>
           <NavItem to="/wiki">Wiki</NavItem>
+          <NavItem to="/wiki">Spenden</NavItem>
         </ul>
       </div>
   )

@@ -19,6 +19,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include media("sm") {
+    padding: 0 3rem;
+  }
 }
 
 .logo-wrapper {
@@ -39,6 +43,9 @@ nav {
 
     @include media("md") {
       display: none;
+    }
+    @include media("sm") {
+      display: inline;
     }
   }
 }

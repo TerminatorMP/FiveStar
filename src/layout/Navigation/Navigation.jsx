@@ -5,7 +5,7 @@ import NavLinks from "../../components/NavLinks/NavLinks";
 
 import styles from './Navigation.module.scss';
 import Content from "../Content/Content";
-import NavLinksResponsive from "../../components/NavLinksResponsive/NavLinksResponsive";
+import NavLinksResponsiveSidebar from "../../components/NavLinksResponsive/NavLinksResponsiveSidebar";
 
 export default function Navigation() {
   return(
@@ -18,6 +18,7 @@ export default function Navigation() {
                 <span>FiveStars</span>
               </div>
               <NavLinks />
+                <NavLinksResponsiveSidebar />
             </div>
           </Content>
         </nav>

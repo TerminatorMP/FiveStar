@@ -1,4 +1,10 @@
+@import "src/assets/styles/mixins";
+
 .navlinks {
+
+  @include media("sm") {
+    display: none;
+  }
 
   & ul {
     list-style-type: none;

@@ -1,0 +1,120 @@
+@import "src/assets/styles/mixins";
+
+.container {
+  display: none;
+
+  @include media("sm") {
+    display: inline;
+  }
+}
+
+.toggler {
+  position: relative;
+  display: inline-block;
+  font-size: 2.6rem;
+  color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.closer {
+  display: none;
+
+  @include media("sm") {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: var(--color-grey);
+    font-size: 3rem;
+  }
+}
+
+.overlay {
+  display: none;
+
+  @include media("sm") {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+.sidebar_spacer {
+  width: 30rem;
+
+  @include media("sm") {
+    display: none;
+  }
+}
+
+.wiki_sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30rem;
+  background-color: var(--color-dark);
+  padding-top: 5rem;
+  border-top: solid .2rem var(--color-primary);
+  box-shadow: 0 0 10px rgba(0,0,0, .6);
+  transition: transform .3s;
+  z-index: 3;
+
+  @include media("sm") {
+    display: inline;
+    transform: translateX(100%);
+    padding-top: 7rem;
+  }
+
+  &.aktive {
+    @include media("sm") {
+      transform: translateX(0);
+    }
+  }
+}
+
+.placeholder {
+  width: 20rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.sidebar_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar_item {
+  width: 100%;
+  line-height: 1;
+  position: relative;
+  font-size: 2.2rem;
+  text-align: right;
+  padding: 2rem 3rem;
+  color: var(--color-grey);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255,255,255, .05);
+    color: var(--color-white);
+  }
+
+  &_active {
+    color: var(--color-primary) !important;
+    background-color: rgba(255,255,255, .1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255,255,255, .15);
+    }
+  }
+}
