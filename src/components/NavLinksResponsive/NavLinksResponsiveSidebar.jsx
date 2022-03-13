@@ -33,6 +33,13 @@ export default function NavLinksResponsiveSidebar() {
                 <div onClick={close} className={styles["closer"]}><FontAwesomeIcon icon={faBars} /></div>
                 <div onClick={close} className={styles["sidebar_box"]}>
                     {sidebarItemList}
+                    <a
+                        className={styles["sidebar_item"]}
+                        href={"https://five-stars-roleplay.tebex.io/"}
+                        target={"_blank"}
+                        rel={"noopener noreferrer"}>
+                        Spenden
+                    </a>
                 </div>
             </div>
             {isAktive ? <div onClick={close} className={styles["overlay"]} /> : null}

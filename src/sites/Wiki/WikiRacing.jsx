@@ -9,12 +9,6 @@ export default function WikiRacing() {
   return(
       <WikiEntry>
         <SectionHeading text={"Racing"} />
-        <img width={"60%"}
-             height={"auto"}
-             style={{display: "block", borderRadius: "5px", border: "solid 3px black"}}
-             src={racing}
-             alt={"Rennen gegen deinen Rivalen"} />
-
         <div className={styles["racing"]}>
           <div className={styles["racing_commands"]}>
             <h3>Commands</h3>

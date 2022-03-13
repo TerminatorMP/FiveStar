@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 import styles from './NavLinks.module.scss';
 
@@ -25,7 +25,15 @@ export default function NavLinks() {
           <NavItem to="/">Home</NavItem>
           <NavItem to="/anleitung">Zugang</NavItem>
           <NavItem to="/wiki">Wiki</NavItem>
-          <NavItem to="/wiki">Spenden</NavItem>
+        <li>
+            <a
+                className={defaultClass}
+                href={"https://five-stars-roleplay.tebex.io/"}
+                target={"_blank"}
+                rel={"noopener noreferrer"}>
+                Spenden
+            </a>
+        </li>
         </ul>
       </div>
   )

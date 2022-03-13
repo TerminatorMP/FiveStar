@@ -1,10 +1,9 @@
 import React from "react";
 
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import Content from "../Content/Content";
 
 import styles from './Footer.module.scss';
-import Star from "../../components/Star/Star";
 
 export default function Footer() {
   return(
@@ -15,6 +14,11 @@ export default function Footer() {
                       <NavLink to={"/"}>Home</NavLink>
                       <NavLink to={"/anleitung"}>Zugang</NavLink>
                       <NavLink to={"/wiki"}>Wiki</NavLink>
+                      <Link to={"https://five-stars-roleplay.tebex.io/"}
+                            target={"_blank"}
+                            rel={"noopener noreferrer"}>
+                          Spenden
+                      </Link>
                   </div>
                   <div className={styles["category"]}>
                       <NavLink to={"/impressum"}>Impressum</NavLink>
